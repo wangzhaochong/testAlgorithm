@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
@@ -15,9 +16,11 @@ public class testSourceCode {
         list.get(0);
         System.out.println(list.size());
 
-        HashMap<String,String> map = new HashMap<>();
+        ConcurrentHashMap<String,String> map = new ConcurrentHashMap<>();
         map.put("aa","aa");
         map.get("aa");
+
+        map.entrySet().iterator();
 
     }
 
