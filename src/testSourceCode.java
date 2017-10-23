@@ -1,6 +1,6 @@
-import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by Hayden on 2017/10/10.
@@ -21,6 +21,9 @@ public class testSourceCode {
         map.get("aa");
 
         map.entrySet().iterator();
+
+        ReentrantLock reentrantLock = new ReentrantLock();
+
 
     }
 
