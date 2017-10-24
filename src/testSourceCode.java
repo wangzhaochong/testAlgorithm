@@ -23,7 +23,8 @@ public class testSourceCode {
         map.entrySet().iterator();
 
         ReentrantLock reentrantLock = new ReentrantLock();
-
+        reentrantLock.lock();
+        reentrantLock.unlock();
 
     }
 
